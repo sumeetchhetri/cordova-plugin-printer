@@ -101,6 +101,10 @@ class PrintContent
             {
                 mime = URLConnection.guessContentTypeFromName(path);
             }
+         
+            if(mime==null) {
+                mime = "application/pdf";
+            }
 
             switch (mime)
             {
